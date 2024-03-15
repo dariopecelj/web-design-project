@@ -1,0 +1,38 @@
+body {
+    background-color: #85AFD4;
+    font-family: 'Lato';
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+p, a, button {
+    font-weight: normal;
+    padding: 10px 0;
+}
+
+a {
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #E47272;
+    color: white;
+    border-radius: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid white;
+    margin: auto;
+}
+
+th, td {
+    border: 2px solid white;
+    padding: 10px;
+}
