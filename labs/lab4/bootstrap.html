@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form Layout</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="firstName">First Name:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-user"></i></div>
+            </div>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+          </div>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lastName">Last Name:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-user"></i></div>
+            </div>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+          </div>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-phone fa-flip-horizontal"></i></div>
+          </div>
+          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-home"></i></div>
+          </div>
+          <input type="text" class="form-control" id="address" placeholder="Enter your address">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="city">City:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-home"></i></div>
+            </div>
+            <input type="text" class="form-control" id="city" placeholder="Enter your city">
+          </div>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="state">State:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-list"></i></div>
+            </div>
+            <input type="text" class="form-control" id="state" placeholder="Enter your state">
+          </div>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="zip">Zip Code:</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text"><i class="fas fa-home"></i></div>
+            </div>
+            <input type="text" class="form-control" id="zip" placeholder="Enter your zip code">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="website">Website or Domain Name:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-globe"></i></div>
+          </div>
+          <input type="text" class="form-control" id="website" placeholder="Enter your website or domain name">
+        </div>
+      </div>
+        <div class="form-group">
+            <label for="hosting">Do you have hosting?</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="hosting" id="hosting-yes" autocomplete="off"> Yes
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="hosting" id="hosting-no" autocomplete="off"> No
+              </label>
+          </div>          
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Project Description:</label>
+        <textarea class="form-control" id="description" rows="5" placeholder="Enter your project description"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-warning">Send</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
