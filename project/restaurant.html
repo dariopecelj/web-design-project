@@ -109,7 +109,7 @@
     <div class="container">
         <h2>Contact Us</h2><br>
         <p>For reservations or inquiries, please contact us using the form below:</p>
-        <form action="#">
+        <form id="contactForm" action="#" method="post" novalidate>
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -146,6 +146,46 @@
     </div>
 </section>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Customer Reviews</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="review">
+                    <p>"Fantastic menu items and awesome waitress! I really recommend Smoke & Sear SteakHouse to everyone searching for a great meal."</p>
+                    <p class="customer-name">- Jane Doe</p>
+                </div>
+                <div class="review">
+                    <p>"I always enjoy the steaks from Smoke & Sear that are cooked well. For me it's my preferable restaurants for that special night out."</p>
+                    <p class="customer-name">- John Smith</p>
+                </div>
+                <div class="review">
+                    <p>"I've never been disappointed after visiting this spot. The atmosphere, the food and the staff are always of a superb quality!"</p>
+                    <p class="customer-name">- Emily Johnson</p>
+                </div>
+                <div class="review">
+                    <p>"My family and I adore dining at Smoke & Sear. The waiters are smiling, and the food is always excellent. A very high recommend!"</p>
+                    <p class="customer-name">- Michael Williams</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Reviews
+</button>
+
+
 
 <footer>
     <div class="container">
@@ -157,5 +197,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
