@@ -12,6 +12,27 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+          <!--form -->
+    <form id="contactForm" method="post">
+        <div class="card mb-4">
+            <div class="card-header">Contact Form</div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -161,6 +182,31 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scripts.js">
+
+            // JavaScript for handling form submission with AJAX
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            var formData = new FormData(this);
+
+            // Send AJAX request
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "your-server-endpoint-url"); // Replace with your server endpoint URL
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Success message
+                        alert("Form submitted successfully!");
+                    } else {
+                        // Error message
+                        alert("Error submitting form. Please try again later.");
+                    }
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
     </body>
 </html>
