@@ -1,0 +1,72 @@
+<!--header-->
+<header class="py-5  border-bottom mb-4">
+    <div class="container">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Welcome to my Blog!</h1>
+            <p class="lead mb-0">I post interasting facts about the newest technology and more!</p>
+        </div>
+    </div>
+</header>
+<!--blog container-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        
+            <!-- Featured blog post -->
+            <div class="card mb-4" id="featured-container">
+                
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+            
+                <div class="row" id="blog-container">
+                    <!-- Blog posts-->
+                    
+                    
+                </div>
+            
+        
+        <!-- Side widgets-->
+        
+    </div>
+</div>
+<!--logo gallery-->
+<div class="container my-4">
+    <h2 class="text-center">Hope you like our logo</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-6">
+            <div class="d-flex justify-content-center mb-4">
+                <img class="img-fluid img-thumbnail gallery-image" src="assets/images/logo.jpg" alt="https://dummyimage.com/600x400/000/fff">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--logo modal enlarged-->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Our Logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" class="img-fluid" src="" alt="Modal Image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./assets/js/img-gallery.js"></script>
+
+
+
+
+<!--<script>
+    BlogService.loadBlogs();
+</script>-->
+
+<script>  
+    BlogServiceAjax.loadBlogs();
+</script>

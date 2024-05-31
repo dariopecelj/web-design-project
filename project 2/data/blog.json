@@ -1,0 +1,56 @@
+[
+    {
+        "id": 4,
+        "title":"International Burch University",
+        "textshort":"International Burch University (IBU) is owned by Stirling Education, a provider of first-class education across the globe with the corporate head office located in London, United Kingdom!",
+        "image":"assets/images/blog-img-4.jpg",
+        "text":"International Burch University (IBU) is owned by Stirling Education, a provider of first-class education across the globe with the corporate head office located in London, United Kingdom. With Faculties in Engineering and Natural Sciences, Economics and Social Science, and Education and Humanities, International Burch University is highly respected and follows the ‘entrepreneurial university model’.",
+        "date":"January 1, 2023",
+        "featured":true,
+        "author":"Josh Valerie",
+        "author_img":"assets/images/author-4.jpg",
+        "tags":"News, Technology",
+        "category":"AI"
+        
+    },
+    {
+        "id": 1,
+        "title":"What is AI?",
+        "textshort":"Artificial intelligence, or AI, is technology that enables computers and machines to simulate human intelligence and problem-solving capabilities!",
+        "image":"assets/images/blog-img-1.jpg",
+        "text":"Artificial intelligence, or AI, is technology that enables computers and machines to simulate human intelligence and problem-solving capabilities. On its own or combined with other technologies (e.g., sensors, geolocation, robotics) AI can perform tasks that would otherwise require human intelligence or intervention. Digital assistants, GPS guidance, autonomous vehicles, and generative AI tools (like Open AI's Chat GPT) are just a few examples of AI in the daily news and our daily lives.",
+        "date":"January 1, 2023",
+        "featured":false,
+        "author":"Josh Valerie",
+        "author_img":"assets/images/author-1.jpg",
+        "tags":"News, Technology",
+        "category":"AI"
+        
+    },
+    {
+        "id": 2,
+        "title":"Next gen processors Soon?",
+        "textshort":"Intel Arrow Lake is Team Blue’s next-generation of processors. The successors to the Meteor Lake/Raptor Lake refresh 14th-generation, Arrow Lake is expected to debut towards the end of 2024, but it’s not quite as straightforward as previous generations.",
+        "image":"assets/images/blog-img-2.jpg",
+        "text":"Performance core numbers are not expected to rise this generation, with the top chips still sporting eight P cores. Efficiency core counts will likely stay the same at the original Arrow Lake launch, with up to 16 cores at the top end. However, there is talk of a mid-generation refresh, which could give some Arrow Lake chips as many as 32 E cores, though those won’t arrive until well into 2025. The new chips will have new core architectures, though. The Arrow Lake P cores will reportedly be based on the Lion Cove architecture, while the efficiency cores will use the Skymont architecture.",
+        "date":"January 1, 2023",
+        "featured":false,
+        "author":"Launa Bothaz",
+        "author_img":"assets/images/author-2.jpg",
+        "tags":"News, Technology",
+        "category":"Gaming"
+    },
+    {
+        "id": 3,
+        "title":"Quantum computers!",
+        "textshort":"Scientists and engineers anticipate that certain problems that are effectively impossible for conventional, classical computers to solve will be easy for quantum computers. Quantum computers are also expected to challenge current cryptography methods and to introduce new possibilities for completely private communication.",
+        "image":"assets/images/blog-img-3.jpg",
+        "text":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque,nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!",
+        "date":"January 1, 2023",
+        "featured":false,
+        "author":"Merita Bosily",
+        "author_img":"assets/images/author-3.jpg",
+        "tags":"News, Sci-Fi",
+        "category":"Computers"
+    }
+]

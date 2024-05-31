@@ -1,0 +1,136 @@
+<!--contact form-->
+<div class="container my-4">
+    <h2 class="text-center">Contact Us</h2>
+    <h5 class="text-center">Sign in to send a message</h1>
+    <form id="contact-form">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name"  required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Login</button>
+            <button id="forgot-pass-btn" type="button" class="btn btn-secondary">Forgot password</button>
+        </div>
+    </form>
+</div>
+<!--google maps-->
+<section class="section" id="contact-us" style="margin-top: 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.8381448517366!2d18.314697021011497!3d43.81879855968285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758ca0f99d6bf3b%3A0x6f97362d8c61c461!2sInternational%20Burch%20University!5e0!3m2!1sen!2sba!4v1709755411976!5m2!1sen!2sba" width="100%" height="681.96px" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            
+        </div>
+    </div>
+</section>
+<!--contact modal-->
+<div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contact-modal-label">New message</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contact-modal-form">
+                    <div class="mb-3">
+                        <label for="username" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message" name="message"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--forgot password modal-->
+<div class="modal fade" id="password-modal-toggle" aria-hidden="true" aria-labelledby="password-modal-toggle-label" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="password-modal-toggle-label">Change your password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="password-modal-form">
+            <div class="modal-body">
+            
+                <div class="mb-3">
+                    <label for="old-password" class="col-form-label">Old password:</label>
+                    <input type="password" class="form-control" id="old-password" name="old-password">
+                </div>
+            
+            </div>
+            <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#password-modal-toggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="password-modal-toggle2" aria-hidden="true" aria-labelledby="password-modal-toggle-label2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="password-modal-toggle-label2">Change your password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form id="password-modal-form2">
+            <div class="modal-body">
+                <div class="mb-3">
+                    
+                    <label for="new-password" class="col-form-label">New password:</label>
+                    <input type="password" class="form-control" id="new-password" name="new-password">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Change passowrd</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+<!--toastr-->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div
+      id="success-toast"
+      class="toast hide"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div class="toast-header">
+        <img src="" class="rounded me-2" alt="" />
+        <strong class="me-auto" id="toast-status">SUCCESS</strong>
+        <small id="toast-status-code">200</small>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="toast-body" id="toast-description"></div>
+    </div>
+</div>
+
+<!--scripts-->
+<script src="./assets/js/form.js"></script>
