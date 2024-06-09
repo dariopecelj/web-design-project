@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, Box, Container, Grid, TextField, Button, FormControl, FormHelperText } from '@mui/material';
+import { Typography, Box, Container, Grid, TextField, Button, FormControl, FormHelperText, Alert } from '@mui/material';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +12,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [successMessage, setSuccessMessage] = useState('');
 
   const validate = () => {
     const newErrors = {};
@@ -34,8 +35,16 @@ const Contact = () => {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       console.log('Form submitted:', formData);
+      setSuccessMessage('Thank you! Your message has been sent.');
+      setFormData({
+        name: '',
+        email: '',
+        message: ''
+      });
+      setErrors({});
     } else {
       setErrors(validationErrors);
+      setSuccessMessage('');
     }
   };
 
@@ -57,6 +66,9 @@ const Contact = () => {
       <Container sx={{ py: 4 }}>
         <form onSubmit={handleSubmit}>
           <Grid container spacing={2}>
+            <Grid item xs={12}>
+              {successMessage && <Alert severity="success">{successMessage}</Alert>}
+            </Grid>
             <Grid item xs={12} sm={6}>
               <FormControl fullWidth error={!!errors.name}>
                 <TextField

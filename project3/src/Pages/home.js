@@ -1,6 +1,5 @@
 import React from 'react';
-import { Typography, Box, Container, Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Typography, Box, Container, Grid, Card, CardContent, CardMedia } from '@mui/material';
 
 const featuredCars = [
   { id: 1, name: 'BMW 3 Series', model: 'Sedan', image: '/images/bmw3series.jpg', description: 'A blend of luxury and performance, perfect for both city and highway driving.' },
@@ -45,9 +44,6 @@ const Home = () => {
                   <Typography variant="body1" component="p">
                     {car.description}
                   </Typography>
-                  <Button component={Link} to={`/cars/${car.id}`} variant="contained" color="primary" sx={{ mt: 2 }}>
-                    Learn More
-                  </Button>
                 </CardContent>
               </Card>
             </Grid>
